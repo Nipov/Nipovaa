@@ -1,0 +1,4 @@
+gh auth login
+gh repo create nipovaa.github.io
+--public --source= --remote=origin
+git push
