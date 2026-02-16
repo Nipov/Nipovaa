@@ -1,0 +1,1 @@
+zip -r nipovaa-github-ready.zip nipovaa/
