@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nipovaa Private VPN</title>
+</head>
+<body>
+ <h1>Nipovaa Private VPN</h1>
+<p>secure home-hosted VPN stack.</p>
+
+<h2>Downloads</h2>
+<ul>
+   <li><a href="downloads/android/openvpn-template.ovpn">OpenVPN Android Template</a></li>
+<li><a href="downloads/android/wireguard-template.conf">WireGuard Android Template</a></li>
+</ul>
+
+<h>Documentation</h2>
+<ul>
+   <li><a href="docs/setup-guide.md">Server Setup Guide</a></
+   <li><a href="docs/router-port-forwarding.md">Router Configuration</a></li>
+   </ul>
+
+</body>
+</html>
