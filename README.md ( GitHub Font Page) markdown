@@ -1,0 +1,37 @@
+Nipovaa Home VPN
+
+Private VPN stack powered by:
+- OpenVPN
+- WireGuard
+- dnsmasq
+-Fail2ban
+-UFW Firewall
+
+## Quick install
+'''bash
+sudo bash vpn-server/install.sh
+
+Start Services
+Bash:
+sudo bash vpn-server/start.sh
+Stop Services
+Bash:
+sudo bash vpn-server/stop.sh
+
+---
+# vpn-server/install.sh
+'''bash
+#:/bin/bash
+
+apt update
+apt install openvpn easy-rsa wireguard
+dnsmasq ufw fail2ban curl -y
+echo "net.ipv4.ip_forward=1" >> /etc/
+sysctl.conf
+sysctl -p
+
+systemctl enable openvpn
+systemctl enable wg-quick@wg0
+systemctl enable dnsmasq
+systemctl enable fail2ban
+echo "installation complete".
